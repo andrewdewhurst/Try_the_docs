@@ -1,0 +1,3057 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Additional Information" href="../other_resources/index.html" /><link rel="prev" title="Capturing packed samples for system integration" href="Capturing_packed_samples.html" />
+
+    <meta name="generator" content="sphinx-3.5.4, furo 2021.04.11.beta34"/>
+        <title>Command list - XVF3610 USer Guide (V5.0.0)</title>
+      <link rel="stylesheet" href="../../../_static/styles/furo.css?digest=59ab60ac09ea94ccfe6deddff6d715cce948a6fc">
+    <link rel="stylesheet" href="../../../_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../../../_static/pygments_dark.css">
+    
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+    <link rel="stylesheet" href="../../../_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">XVF3610 USer Guide (V5.0.0)</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../../_static/xmos_logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">XVF3610 USer Guide (V5.0.0)</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../before_you_start.html">Before you start</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../LICENSE.html">XMOS PUBLIC LICENCE: Version 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../COPYRIGHTS.html">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../version_info.html">Tool and Architecture Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../CHANGELOG.html">lib_xud Change Log</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../overview/index.html">XVF3610 Product description</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview/introduction.html">XVF3610 Far-field voice processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/architecture.html">XVF3610 System Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/audio_pipeline.html">XVF3610 Voice Processing Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/control_interface.html">Principles of configuration, control and usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/firmware_package.html">Firmware release package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/firmware_package.html#required-tools">Required Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/firmware_package.html#command-line-interface-vfctrl">Command-line interface (vfctrl)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/firmware_package.html#configuration-via-control-interface">Configuration via Control interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/development_kits.html">Development kits</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../features/index.html">Product features</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_booting.html">XVF3610 Features and Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_audio.html">Interfaces, Audio Routing and Filtering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_audio.html#far-field-voice-processing">Far-Field Voice Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_interfaces.html">I2C Slave Control interface (XVF3610-INT only)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_interfaces.html#general-purpose-input-and-output-and-peripheral-bridging">General Purpose Input and Output and Peripheral Bridging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_interfaces.html#gpio">GPIO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_interfaces.html#i2c-master-peripheral-interface-xvf3610-ua-only">I2C Master peripheral interface (XVF3610-UA Only)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_interfaces.html#spi-master">SPI Master</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../features/features_usb.html">USB Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Reference information</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="XVF3610_parameter_summary.html">Parameter summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Boot_Status_codes.html">Boot status codes (RUN_STATUS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Example_SPISPEC.html">Example .SPISPEC file format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SPI_Booting_of_XVF3610-UA_dev_kit.html">SPI Boot custom connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="USB_Enumeration_data.html">USB enumeration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="USB-HID_example.html">USB HID - Example using the development kit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="General_purpose_filter_example.html">General purpose filter example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Control_parameter_protocol.html">Command transport protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Flash_programming_flow.html">Flash programming and update flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Capturing_packed_samples.html">Capturing packed samples for system integration</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Command list</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../other_resources/index.html">Additional Information</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other_resources/documentation.html">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other_resources/firmware.html">Device firmware and software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/index.html#revision-history">Revision History</a></li>
+</ul>
+
+</div>
+
+    <select name="version" id="version-select" value="Latest" onchange="changeVersion(this.value)" >
+    <option selected disabled>Choose version</option>
+            <option value="html/4.0.0/">4.0.0</option>
+            <option value="html/latest/">latest</option>
+    </select>
+
+    <script>
+    function changeVersion(val) {
+        var loc = window.location.toString();
+        var i = loc.indexOf("html/");
+        if (i >= 0) {
+            var s1 = loc.substring(0, i);
+            var i2 = loc.indexOf("/", i+6)
+            var s2 = loc.substring(i2+1);
+            nl=s1.concat(val, s2);
+
+
+            var request = new XMLHttpRequest();  
+            request.open('GET', nl, true);
+            request.onreadystatechange = function(){
+            if (request.readyState === 4){
+                if (request.status === 404) {  
+                    alert("Oh no, it does not exist!");
+                    window.location.assign(loc);
+                    location.reload();
+                }
+                else {
+                    window.location.assign(nl);
+                }  
+            }
+        };
+        request.send();    
+        }
+    }
+    </script>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="command-list">
+<h1>Command list<a class="headerlink" href="#command-list" title="Permalink to this headline">¶</a></h1>
+<div class="table-wrapper"><table class="colwidths-auto docutils align-default" id="id1">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">Command List</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Cmd_Group</p></th>
+<th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_VERSION</p></td>
+<td><p>CONTROL: get version</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_STATUS</p></td>
+<td><p>CONTROL: get status</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_DELAY_SAMPLES</p></td>
+<td><p>CONTROL: get configurable delay in samples</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_MSG</p></td>
+<td><p>CONTROL: get build message</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_HOST</p></td>
+<td><p>CONTROL: get build host</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_REPO_HASH</p></td>
+<td><p>CONTROL: get repo hash</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_XGIT_VIEW</p></td>
+<td><p>CONTROL: get xgit view</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_XGIT_HASH</p></td>
+<td><p>CONTROL: get xgit hash</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_MODIFIED</p></td>
+<td><p>CONTROL: get build modified from given view/hash</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2C</p></td>
+<td><p>GPIO: Read from an I2C device connected to the xvf device</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_I2C_WITH_REG</p></td>
+<td><p>GPIO: Read from the register of an I2C device connected to the xvf device</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2C_READ_HEADER</p></td>
+<td><p>GPIO: Get the address, register address, and count of next I2C read</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2C</p></td>
+<td><p>GPIO: Write to an I2C device connected to the xvf device</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_I2C_WITH_REG</p></td>
+<td><p>GPIO: Write to the register of an I2C device connected to the xvf device</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2C_READ_HEADER</p></td>
+<td><p>GPIO: Set address, register address, and count of next I2C read</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SPI</p></td>
+<td><p>GPIO: Gets the contents of the SPI read buffer</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_SPI_READ_HEADER</p></td>
+<td><p>GPIO: Get the address and count of next SPI read</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SPI_PUSH</p></td>
+<td><p>GPIO: Push SPI command data onto the execution queue</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_SPI_PUSH_AND_EXEC</p></td>
+<td><p>GPIO: Push SPI command data and execute the command from the stack</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SPI_READ_HEADER</p></td>
+<td><p>GPIO: Set address and count of next SPI read</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_PORT</p></td>
+<td><p>GPIO: Read current state of the selected GPIO port</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_GPI_PIN</p></td>
+<td><p>GPIO: Read current state of the selected GPIO pin</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_INT_PENDING_PIN</p></td>
+<td><p>GPIO: Read whether interrupt was triggered for selected pin</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_GPI_INT_PENDING_PORT</p></td>
+<td><p>GPIO: Read whether interrupt was triggered for all pins on selected port</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_KWD_HID_EVENT_CNT</p></td>
+<td><p>GPIO: read number of KWD HID events detected</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_KWD_HID_EVENT_CNT</p></td>
+<td><p>GPIO: write number of KWD HID events detected</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PORT</p></td>
+<td><p>GPIO: Write to all pins of a GPIO port</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PIN</p></td>
+<td><p>GPIO: Write to a specific GPIO pin</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PIN_ACTIVE_LEVEL</p></td>
+<td><p>GPIO: Set the active level for a specific GPO pin. 0: active low, 1: active high</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPI_PIN_ACTIVE_LEVEL</p></td>
+<td><p>GPIO: Set the active level for a specific GPI pin. 0: active low, 1: active high</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPI_INT_CONFIG</p></td>
+<td><p>GPIO: Sets the interrupt config for a specific pin</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPI_READ_HEADER</p></td>
+<td><p>GPIO: Sets the selected port and pin for the next GPIO read</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_READ_HEADER</p></td>
+<td><p>GPIO: Gets the currently selected port and pin</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PWM_DUTY</p></td>
+<td><p>GPIO: Set the pwm duty for a specific pin. Value given as an integer percentage</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_FLASHING</p></td>
+<td><p>GPIO: Set the serial flash mask for a specific pin. Each bit in the mask describes the GPO state for 100ms intervals</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_KWD_BOOT_STATUS</p></td>
+<td><p>GPIO: Gets boot status for keyword detectors</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_RUN_STATUS</p></td>
+<td><p>GPIO: Gets run status for the device</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_IO_MAP_AND_SHIFT</p></td>
+<td><p>Get IO map and output shift values for the device</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_IO_MAP</p></td>
+<td><p>Set IO map for the device. arg1: dest(output_io_map_t), arg2: source(input_io_map_t)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_INDEX</p></td>
+<td><p>Set filter index. Selects which filter block will be read from/written to arg1: dest(filter_block_map_t)</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_BYPASS</p></td>
+<td><p>Set filter bypass state. arg1: 0 - filter enabled, 1 - bypassed</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_COEFF</p></td>
+<td><p>Set biquad coeffs for a selected filter using floating point. arg1..10: 5x2 float coeffs in forward order (a1,a2,b0,b1,b2) where a0 always is 1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_COEFF_RAW</p></td>
+<td><p>Set raw biquad coeffs for a selected filters. arg1..10: 2 sets of coeffs in forward order (b0,b1,b2,-a1,-a2) signed Q28 format</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_INDEX</p></td>
+<td><p>Get filter index. Selects which filter block will be read from/written to</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_BYPASS</p></td>
+<td><p>Get filter bypass state. 0 - filter enabled, 1 - bypassed</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_COEFF</p></td>
+<td><p>Get biquad coeffs for a selected filter using floating point. arg1..10: 5x2 float coeffs in forward order (a1,a2,b0,b1,b2) where a0 always is 1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_COEFF_RAW</p></td>
+<td><p>Get raw biquad coeffs for a selected filters. arg1..10: 2 sets of coeffs in forward order (b0,b1,b2,-a1,-a2) signed Q28 format</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_OUTPUT_SHIFT</p></td>
+<td><p>For a selected output(output_io_map_t), set the no. of bits the output samples will be shifted by. Postive shift value indicates left shift, negative indicates right shift</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MAX_UBM_CYCLES</p></td>
+<td><p>Get maximum no. of cycles taken by the user buffer management function</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>RESET_MAX_UBM_CYCLES</p></td>
+<td><p>reset the max user buffer management cycles count</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_I2S_RATE</p></td>
+<td><p>Get I2S rate</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_I2S_RATE</p></td>
+<td><p>Set I2S rate. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2S_START_STATUS</p></td>
+<td><p>Start I2S. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2S_START_STATUS</p></td>
+<td><p>Get I2S start status</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_VENDOR_ID</p></td>
+<td><p>Get USB Vendor ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_PRODUCT_ID</p></td>
+<td><p>Get USB Product ID</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_BCD_DEVICE</p></td>
+<td><p>Get USB Device Release Number (bcdDevice)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_VENDOR_STRING</p></td>
+<td><p>Get USB Vendor string</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_PRODUCT_STRING</p></td>
+<td><p>Get USB Product string</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_HID_MAP</p></td>
+<td><p>Get HID map. Returns byte and bit in HID report for event type and index given by SET_HID_MAP_READ_HEADER.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HID_MAP_READ_HEADER</p></td>
+<td><p>Get HID map read header. Returns event type, e.g., GPI or keyword, and index.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_HID_USAGE</p></td>
+<td><p>Get HID usage. Returns usage page number and short item bytes 0..2 for the HID report byte and bit set by SET_HID_USAGE_READ_HEADER.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HID_USAGE_READ_HEADER</p></td>
+<td><p>Get HID usage read header. Returns the HID report byte and bit and the usage page given by SET_HID_USAGE_READ_HEADER.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SERIAL_NUMBER</p></td>
+<td><p>Read serial number from USB descriptor (normally initialised from flash).</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HARDWARE_BUILD</p></td>
+<td><p>Get the build number from the hardware build section of the flash data partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_VENDOR_ID</p></td>
+<td><p>Set USB Vendor ID. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_PRODUCT_ID</p></td>
+<td><p>Set USB Product ID. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_VENDOR_STRING</p></td>
+<td><p>Set USB Vendor string. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_PRODUCT_STRING</p></td>
+<td><p>Set USB Product string. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_BCD_DEVICE</p></td>
+<td><p>Set USB Device Release Number (bcdDevice)</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_HID_MAP</p></td>
+<td><p>Set HID map for event type and index from SET_HID_MAP_READ_HEADER. arg1: HID report byte. arg2: HID report bit. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_HID_MAP_READ_HEADER</p></td>
+<td><p>Set HID map read header. arg1: type of event, e.g., GPI or keyword. arg2: index of event.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_HID_USAGE</p></td>
+<td><p>Set HID usage for report byte and bit and with usage page from SET_HID_USAGE_READ_HEADER. arg1..3: short item bytes 0..2. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_HID_USAGE_READ_HEADER</p></td>
+<td><p>Set HID usage read header. arg1: HID report byte. arg2: HID report bit. arg3: usage page number (see USB HID Usage Tables).</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_SERIAL_NUMBER</p></td>
+<td><p>Program serial number to flash</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_SERIAL_NUMBER</p></td>
+<td><p>Load serial number from flash and initialise USB device descriptor with it. Will not work after boot since descriptor is populated only once, with USB start.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_START_STATUS</p></td>
+<td><p>Start USB. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_START_STATUS</p></td>
+<td><p>Get USB start status</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_TO_DEVICE_RATE</p></td>
+<td><p>Get USB to device rate</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_DEVICE_TO_USB_RATE</p></td>
+<td><p>Get device to USB rate</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_TO_DEVICE_BIT_RES</p></td>
+<td><p>Get USB to device bit resolution</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_DEVICE_TO_USB_BIT_RES</p></td>
+<td><p>Get device to USB bit resolution</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_TO_DEVICE_RATE</p></td>
+<td><p>Set USB to device rate</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_DEVICE_TO_USB_RATE</p></td>
+<td><p>Set device to USB rate</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_TO_DEVICE_BIT_RES</p></td>
+<td><p>Set USB to device bit resolution</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_DEVICE_TO_USB_BIT_RES</p></td>
+<td><p>Set device to USB bit resolution</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MCLK_IN_TO_PDM_CLK_DIVIDER</p></td>
+<td><p>Get XCore divider from input master clock to 6.144MHz DDR PDM microphone clock</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SYS_CLK_TO_MCLK_OUT_DIVIDER</p></td>
+<td><p>Get XCore divider from system clock to output master clock</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_MCLK_IN_TO_PDM_CLK_DIVIDER</p></td>
+<td><p>Set XCore divider from input master clock to 6.144MHz DDR PDM microphone clock (when master clock is slaved). Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SYS_CLK_TO_MCLK_OUT_DIVIDER</p></td>
+<td><p>Set XCore divider from system clock to output master clock (where master clock output is used). Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MIC_START_STATUS</p></td>
+<td><p>Get microphone client start status.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_MIC_START_STATUS</p></td>
+<td><p>Start microphone client (audio frontend).  This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_MONITOR_STATE_USING_GPO_ENABLED</p></td>
+<td><p>enable monitoring of state on GPO. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_KWD_INTERRUPT_PIN</p></td>
+<td><p>set gpi pin index to receive kwd interrupt on</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_KWD_INTERRUPT_PIN</p></td>
+<td><p>get gpi pin index to receive kwd interrupt on</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_BYPASS_AEC</p></td>
+<td><p>AEC: get bypass</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_X_ENERGY_DELTA_AEC</p></td>
+<td><p>AEC: get X energy delta</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_X_ENERGY_GAMMA_LOG2_AEC</p></td>
+<td><p>AEC: get X energy gamma log2</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_FORCED_MU_VALUE_AEC</p></td>
+<td><p>AEC: get forced mu value</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_ADAPTATION_CONFIG_AEC</p></td>
+<td><p>AEC: get adaptation config</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_MU_SCALAR_AEC</p></td>
+<td><p>AEC: get mu_scalar</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_MU_LIMITS_AEC</p></td>
+<td><p>AEC: get mu_high and mu_low</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_SIGMA_ALPHAS_AEC</p></td>
+<td><p>AEC: get sigma alphas</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_ERLE_CH0_AEC</p></td>
+<td><p>AEC: get channel 0 ERLE</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_ERLE_CH1_AEC</p></td>
+<td><p>AEC: get channel 1 ERLE</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_FRAME_ADVANCE_AEC</p></td>
+<td><p>AEC: get frame advance</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_Y_CHANNELS_AEC</p></td>
+<td><p>AEC: get y channels</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_X_CHANNELS_AEC</p></td>
+<td><p>AEC: get x channels</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_X_CHANNEL_PHASES_AEC</p></td>
+<td><p>AEC: get x channel phases</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_F_BIN_COUNT_AEC</p></td>
+<td><p>AEC: get f bin count</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_FILTER_COEFFICIENTS_AEC</p></td>
+<td><p>AEC: get filter coefficients</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_COEFF_INDEX_AEC</p></td>
+<td><p>AEC: get coefficient index</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_CH1_BEAMFORM_ENABLE</p></td>
+<td><p>get if beamforming is enabled on channel1. default:enable</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_DELAY_ESTIMATOR_ENABLED</p></td>
+<td><p>CONTROL: enable/disable delay estimation</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_DELAY_ESTIMATE</p></td>
+<td><p>CONTROL: get delay estimate</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_DELAY_DIRECTION</p></td>
+<td><p>CONTROL: get configurable delay direction: 0: delay references, 1: delay mics</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MIC_SHIFT_SATURATE</p></td>
+<td><p>CONTROL: get the shift value and saturation (1=enable) to be applied to the input mic samples</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_AEC_RESET_TIMEOUT</p></td>
+<td><p>stage A: Get timeout between consecutive AEC resets, values are expressed in 15ms frames. If timeout is -1, the AEC reset is disabled</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ALT_ARCH_ENABLED</p></td>
+<td><p>stage A: Get state of xvf3610 alternate architecture setting: 0: normal, 1: alt-arch</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_ENABLED</p></td>
+<td><p>stage A: get automatic delay estimator controller enabled: 0: off, 1: on</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ADEC_MODE</p></td>
+<td><p>stage A: get automatic delay estimator controller mode: 0: normal AEC mode, 1: delay estimation mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_TIME_SINCE_RESET</p></td>
+<td><p>stage A: get time in milliseconds since last automatic delay change by ADEC</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_AGM</p></td>
+<td><p>stage A: get AEC Goodness Metric estimate (0.0 - 1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ERLE_BAD_BITS</p></td>
+<td><p>stage A: get ERLE bad threshold in bits (log2)</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ERLE_GOOD_BITS</p></td>
+<td><p>stage A: get ERLE good threshold in bits (log2)</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_PEAK_PHASE_ENERGY_TREND_GAIN</p></td>
+<td><p>stage A: get value which sets AGM sensitivity to peak phase energy slope</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ERLE_BAD_GAIN</p></td>
+<td><p>stage A: set how steeply AGM drops off when ERLE below threshold</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_FAR_THRESHOLD</p></td>
+<td><p>stage A: get far signal energy threshold above which we update AGM</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_AEC_PEAK_TO_AVERAGE_RATIO</p></td>
+<td><p>stage A: get AEC coefficients peak to average ratio</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_PHASE_POWERS</p></td>
+<td><p>stage A: get 5 phase powers (240 samples per phase) used in delay estimation from the index set.</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_PHASE_POWER_INDEX</p></td>
+<td><p>stage A: get GERLE gain (how strongly it responds either side of mid point)</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_A</p></td>
+<td><p>stage A min rx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_A</p></td>
+<td><p>stage A max rx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_A</p></td>
+<td><p>stage A min control time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_A</p></td>
+<td><p>stage A max control time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_A</p></td>
+<td><p>stage A min dsp time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_A</p></td>
+<td><p>stage A max dsp time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_A</p></td>
+<td><p>stage A min tx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_A</p></td>
+<td><p>stage A max tx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_A</p></td>
+<td><p>stage A min idle time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_A</p></td>
+<td><p>stage A max idle time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_PEAK_TO_AVERAGE_GOOD_AEC</p></td>
+<td><p>stage A: get the peak to average ratio that is considered good when in normal AEC mode</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_ADEC_PEAK_TO_AVERAGE_GOOD_AEC</p></td>
+<td><p>stage A: set the peak to average ratio that is considered good when in normal AEC mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_B</p></td>
+<td><p>stage B min rx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_B</p></td>
+<td><p>stage B max rx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_B</p></td>
+<td><p>stage B min control time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_B</p></td>
+<td><p>stage B max control time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_B</p></td>
+<td><p>stage B min dsp time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_B</p></td>
+<td><p>stage B max dsp time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_B</p></td>
+<td><p>stage B min tx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_B</p></td>
+<td><p>stage B max tx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_B</p></td>
+<td><p>stage B min idle time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_B</p></td>
+<td><p>stage B max idle time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_C</p></td>
+<td><p>stage C min rx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_C</p></td>
+<td><p>stage C max rx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_C</p></td>
+<td><p>stage C min control time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_C</p></td>
+<td><p>stage C max control time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_C</p></td>
+<td><p>stage C min dsp time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_C</p></td>
+<td><p>stage C max dsp time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_C</p></td>
+<td><p>stage C min tx time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_C</p></td>
+<td><p>stage C max tx time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_C</p></td>
+<td><p>stage C min idle time per frame</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_C</p></td>
+<td><p>stage C max idle time per frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_GAIN_CH0_AGC</p></td>
+<td><p>get gain for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_GAIN_CH1_AGC</p></td>
+<td><p>get gain for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_MAX_GAIN_CH0_AGC</p></td>
+<td><p>get max gain for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>get max gain for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_MIN_GAIN_CH0_AGC</p></td>
+<td><p>get min gain for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_MIN_GAIN_CH1_AGC</p></td>
+<td><p>get min gain for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_UPPER_THRESHOLD_CH0_AGC</p></td>
+<td><p>get upper threshold of desired level for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_UPPER_THRESHOLD_CH1_AGC</p></td>
+<td><p>get upper threshold of desired level for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LOWER_THRESHOLD_CH0_AGC</p></td>
+<td><p>get lower threshold of desired level for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LOWER_THRESHOLD_CH1_AGC</p></td>
+<td><p>get lower threshold of desired level for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_CH0_AGC</p></td>
+<td><p>get AGC adaptation for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_CH1_AGC</p></td>
+<td><p>get AGC adaptation for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_ON_VAD_CH0_AGC</p></td>
+<td><p>get AGC adaptation using VAD data for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_ON_VAD_CH1_AGC</p></td>
+<td><p>get AGC adaptation using VAD data for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_SOFT_CLIPPING_CH0_AGC</p></td>
+<td><p>get AGC soft clipping for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_SOFT_CLIPPING_CH1_AGC</p></td>
+<td><p>get AGC soft clipping  for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_ENABLED_CH0_AGC</p></td>
+<td><p>get loss control enable for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_ENABLED_CH1_AGC</p></td>
+<td><p>get loss control enable for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_N_FRAMES_CH1_AGC</p></td>
+<td><p>get number of near-end and far-end frames in loss control for channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_CORR_THRESHOLD_CH0_AGC</p></td>
+<td><p>get loss control correlation threshold for channel 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_CORR_THRESHOLD_CH1_AGC</p></td>
+<td><p>get loss control correlation threshold for channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_DELTAS_CH0_AGC</p></td>
+<td><p>get loss control delta coefficient for channel 0: far-end only, near-end only, both far-end and near-end</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_DELTAS_CH1_AGC</p></td>
+<td><p>get loss control delta coefficient for channel 1: far-end only, near-end only, both far-end and near-end</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_GAMMAS_CH0_AGC</p></td>
+<td><p>get loss control gamma coefficients for channel 0: background power, increment and decrement</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_GAMMAS_CH1_AGC</p></td>
+<td><p>get loss control gamma coefficients for channel 1: background power, increment and decrement</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_GAINS_CH0_AGC</p></td>
+<td><p>get loss control gains for channel 0: max, double-talk, silence and min</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_GAINS_CH1_AGC</p></td>
+<td><p>get loss control gains for channel 1: max, double-talk, silence and min</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_INCREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>get stepsize with which gain is incremented for AGC ch0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_INCREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>get stepsize with which gain is incremented for AGC ch1</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_DECREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>get stepsize with which gain is decremented for AGC ch0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_DECREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>get stepsize with which gain is decremented for AGC ch1</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_BYPASS_IC</p></td>
+<td><p>IC: get bypass state</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_X_ENERGY_DELTA_IC</p></td>
+<td><p>IC: get X energy delta</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_X_ENERGY_GAMMA_LOG2_IC</p></td>
+<td><p>IC: get X energy gamma log2</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_FORCED_MU_VALUE_IC</p></td>
+<td><p>IC: get forced mu value</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_ADAPTATION_CONFIG_IC</p></td>
+<td><p>IC: get adaptation config</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_SIGMA_ALPHA_IC</p></td>
+<td><p>IC: get adaptation config</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_PHASES_IC</p></td>
+<td><p>IC: get phases</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_PROC_FRAME_BINS_IC</p></td>
+<td><p>IC: get proc frame bins</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_FILTER_COEFFICIENTS_IC</p></td>
+<td><p>IC: get filter coefficients</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_COEFFICIENT_INDEX_IC</p></td>
+<td><p>IC: get coefficient index</p></td>
+</tr>
+<tr class="row-even"><td><p>SUP</p></td>
+<td><p>GET_BYPASS_SUP</p></td>
+<td><p>SUP: get bypass</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_BYPASS_AEC</p></td>
+<td><p>AEC: set bypass</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_X_ENERGY_DELTA_AEC</p></td>
+<td><p>AEC: set X energy delta</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_X_ENERGY_GAMMA_LOG2_AEC</p></td>
+<td><p>AEC: set X energy gamma log2</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_FORCED_MU_VALUE_AEC</p></td>
+<td><p>AEC: set forced mu value</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_ADAPTATION_CONFIG_AEC</p></td>
+<td><p>AEC: set adaptation config</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_MU_SCALAR_AEC</p></td>
+<td><p>AEC: set mu_scalar</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_MU_LIMITS_AEC</p></td>
+<td><p>AEC: set mu_high and mu_low</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_SIGMA_ALPHAS_AEC</p></td>
+<td><p>AEC: set sigma alphas</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>RESET_FILTER_AEC</p></td>
+<td><p>AEC: reset filter</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_COEFF_INDEX_AEC</p></td>
+<td><p>AEC: set coefficient index</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_DELAY_DIRECTION</p></td>
+<td><p>set configurable delay direction: 0: delay references, 1: delay mics</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_DELAY_SAMPLES</p></td>
+<td><p>CONTROL: set configurable delay in samples</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_DELAY_ESTIMATOR_ENABLED</p></td>
+<td><p>set delay estimator enabled</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_MIC_SHIFT_SATURATE</p></td>
+<td><p>CONTROL: set the shift value and saturation (1=enable) to be applied to the input mic samples</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ALT_ARCH_ENABLED</p></td>
+<td><p>stage A: Set state of xvf3610 alternate architecture setting: 0: normal, 1: alt-arch</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_AEC_RESET_TIMEOUT</p></td>
+<td><p>stage A: Set timeout between consecutive AEC resets, values are expressed in 15ms frames. If timeout is -1, the AEC reset is disabled</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ADEC_ENABLED</p></td>
+<td><p>set delay estimator controller enabled: 0: off, 1: on</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_MANUAL_ADEC_CYCLE_TRIGGER</p></td>
+<td><p>trigger a delay estimate + delay configure cycle when 1 is written</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ERLE_BAD_BITS</p></td>
+<td><p>set ERLE threshold at which AGM is decreased</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_ERLE_GOOD_BITS</p></td>
+<td><p>set ERLE threshold at which AGM is increased</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ERLE_BAD_GAIN</p></td>
+<td><p>set how strongly AGM is updated when ERLE below threshold</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_PEAK_PHASE_ENERGY_TREND_GAIN</p></td>
+<td><p>set how strongly AGM is updated by the peak phase slope</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ADEC_FAR_THRESHOLD</p></td>
+<td><p>set energy threshold of far signal above which AGM is updated</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_PHASE_POWER_INDEX</p></td>
+<td><p>set index for reading phase powers</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_A</p></td>
+<td><p>reset stage A frame time</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_B</p></td>
+<td><p>reset stage B frame time</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_C</p></td>
+<td><p>reset stage C frame time</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_GAIN_CH0_AGC</p></td>
+<td><p>set gain for channel 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_GAIN_CH1_AGC</p></td>
+<td><p>set gain for channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH0_AGC</p></td>
+<td><p>set max gain for channel 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>set gain for channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>set max gain for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_MIN_GAIN_CH0_AGC</p></td>
+<td><p>set min gain for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MIN_GAIN_CH1_AGC</p></td>
+<td><p>set min gain for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_UPPER_THRESHOLD_CH0_AGC</p></td>
+<td><p>set upper threshold of desired level for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_UPPER_THRESHOLD_CH1_AGC</p></td>
+<td><p>set upper threshold of desired level for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LOWER_THRESHOLD_CH0_AGC</p></td>
+<td><p>set lower threshold of desired level for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LOWER_THRESHOLD_CH1_AGC</p></td>
+<td><p>set lower threshold of desired level for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_CH0_AGC</p></td>
+<td><p>set AGC adaptation for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_CH1_AGC</p></td>
+<td><p>set AGC adaptation for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_ON_VAD_CH0_AGC</p></td>
+<td><p>set AGC adaptation using VAD data for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_ON_VAD_CH1_AGC</p></td>
+<td><p>set AGC adaptation using VAD data for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_SOFT_CLIPPING_CH0_AGC</p></td>
+<td><p>set AGC soft clipping for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_SOFT_CLIPPING_CH1_AGC</p></td>
+<td><p>set AGC soft clipping for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_ENABLED_CH0_AGC</p></td>
+<td><p>enable loss control for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_ENABLED_CH1_AGC</p></td>
+<td><p>enable loss control for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_N_FRAMES_CH0_AGC</p></td>
+<td><p>set number of frames in loss control for near-end and far-end activity on channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_N_FRAMES_CH1_AGC</p></td>
+<td><p>set number of frames in loss control for near-end and far-end activity on channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_CORR_THRESHOLD_CH0_AGC</p></td>
+<td><p>set loss control correlation threshold for channel 0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_CORR_THRESHOLD_CH1_AGC</p></td>
+<td><p>set loss control correlation threshold for channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_DELTAS_CH0_AGC</p></td>
+<td><p>set loss control delta coefficients for channel 0: far-end only, near-end only, both far-end and near-end</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_DELTAS_CH1_AGC</p></td>
+<td><p>set loss control delta coefficients for channel 1: far-end only, near-end only, both far-end and near-end</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_GAMMAS_CH0_AGC</p></td>
+<td><p>set loss control gamma coefficients for channel 0: background power, increment and decrement</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_GAMMAS_CH1_AGC</p></td>
+<td><p>set loss control gamma coefficients for channel 1: background power, increment and decrement</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_GAINS_CH0_AGC</p></td>
+<td><p>set loss control gains for channel 0: max, double-talk, silence and min</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_GAINS_CH1_AGC</p></td>
+<td><p>set loss control gains for channel 1: max, double-talk, silence and min</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_INCREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>set stepsize with which gain is incremented for AGC ch0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_INCREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>set stepsize with which gain is incremented for AGC ch1</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_DECREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>set stepsize with which gain is decremented for AGC ch0</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_DECREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>set stepsize with which gain is decremented for AGC ch1</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_BYPASS_IC</p></td>
+<td><p>IC: set bypass</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_X_ENERGY_DELTA_IC</p></td>
+<td><p>IC: set X energy delta</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_X_ENERGY_GAMMA_LOG2_IC</p></td>
+<td><p>IC: set X energy gamma log2</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_FORCED_MU_VALUE_IC</p></td>
+<td><p>IC: set forced mu value</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_ADAPTATION_CONFIG_IC</p></td>
+<td><p>IC: set adaptation config</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_SIGMA_ALPHA_IC</p></td>
+<td><p>IC: set adaptation config</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_COEFFICIENT_INDEX_IC</p></td>
+<td><p>IC: set coefficient index</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>RESET_FILTER_IC</p></td>
+<td><p>IC: reset filter</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_CH1_BEAMFORM_ENABLE</p></td>
+<td><p>set if beamforming is enabled on channel1</p></td>
+</tr>
+<tr class="row-even"><td><p>SUP</p></td>
+<td><p>SET_BYPASS_SUP</p></td>
+<td><p>SUP: set bypass</p></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%"/>
+<col style="width: 11%"/>
+<col style="width: 11%"/>
+<col style="width: 6%"/>
+<col style="width: 67%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Cmd_Group</p></th>
+<th class="head"><p>Parameter</p></th>
+<th class="head"><p>R/W</p></th>
+<th class="head"><p>Num_param</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_VERSION</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: get version”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: get status”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_DELAY_SAMPLES</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: get configurable delay in samples”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_MSG</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_MSG_LEN</p></td>
+<td><p>“CONTROL: get build message”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_HOST</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_HOST_LEN</p></td>
+<td><p>“CONTROL: get build host”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_REPO_HASH</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_REPO_HASH_LEN</p></td>
+<td><p>“CONTROL: get repo hash”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_XGIT_VIEW</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_XGIT_VIEW_LEN</p></td>
+<td><p>“CONTROL: get xgit view”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_BLD_XGIT_HASH</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_XGIT_HASH_LEN</p></td>
+<td><p>“CONTROL: get xgit hash”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_BLD_MODIFIED</p></td>
+<td><p>READ</p></td>
+<td><p>BLD_MODIFIED_LEN</p></td>
+<td><p>“CONTROL: get build modified from given view/hash”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2C</p></td>
+<td><p>READ</p></td>
+<td><p>I2C_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Read from an I2C device connected to the xvf device”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_I2C_WITH_REG</p></td>
+<td><p>READ</p></td>
+<td><p>I2C_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Read from the register of an I2C device connected to the xvf device”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2C_READ_HEADER</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Get the address, register address, and count of next I2C read”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2C</p></td>
+<td><p>WRITE</p></td>
+<td><p>I2C_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Write to an I2C device connected to the xvf device”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_I2C_WITH_REG</p></td>
+<td><p>WRITE</p></td>
+<td><p>I2C_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Write to the register of an I2C device connected to the xvf device”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2C_READ_HEADER</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Set address, register address, and count of next I2C read”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SPI</p></td>
+<td><p>READ</p></td>
+<td><p>SPI_READ_BUF_SIZE</p></td>
+<td><p>“GPIO: Gets the contents of the SPI read buffer”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_SPI_READ_HEADER</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“GPIO: Get the address and count of next SPI read”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SPI_PUSH</p></td>
+<td><p>WRITE</p></td>
+<td><p>SPI_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Push SPI command data onto the execution queue”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_SPI_PUSH_AND_EXEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>SPI_MAX_CMD_SIZE</p></td>
+<td><p>“GPIO: Push SPI command data and execute the command from the stack”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SPI_READ_HEADER</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“GPIO: Set address and count of next SPI read”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_PORT</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Read current state of the selected GPIO port”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_GPI_PIN</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Read current state of the selected GPIO pin”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_INT_PENDING_PIN</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Read whether interrupt was triggered for selected pin”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_GPI_INT_PENDING_PORT</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Read whether interrupt was triggered for all pins on selected port”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_KWD_HID_EVENT_CNT</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: read number of KWD HID events detected”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_KWD_HID_EVENT_CNT</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: write number of KWD HID events detected”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PORT</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“GPIO: Write to all pins of a GPIO port”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PIN</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Write to a specific GPIO pin”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PIN_ACTIVE_LEVEL</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Set the active level for a specific GPO pin. 0: active low, 1: active high”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPI_PIN_ACTIVE_LEVEL</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Set the active level for a specific GPI pin. 0: active low, 1: active high”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPI_INT_CONFIG</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Sets the interrupt config for a specific pin”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPI_READ_HEADER</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“GPIO: Sets the selected port and pin for the next GPIO read”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_GPI_READ_HEADER</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“GPIO: Gets the currently selected port and pin”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_GPO_PWM_DUTY</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Set the pwm duty for a specific pin. Value given as an integer percentage”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_GPO_FLASHING</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“GPIO: Set the serial flash mask for a specific pin. Each bit in the mask describes the GPO state for 100ms intervals”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_KWD_BOOT_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Gets boot status for keyword detectors”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_RUN_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“GPIO: Gets run status for the device”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_IO_MAP_AND_SHIFT</p></td>
+<td><p>READ</p></td>
+<td><p>NUM_IO_MAP_OUTPUTS*sizeof(io_map_and_output_shift_t)</p></td>
+<td><p>“Get IO map and output shift values for the device”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_IO_MAP</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“Set IO map for the device. arg1: dest(output_io_map_t), arg2: source(input_io_map_t)”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_INDEX</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set filter index. Selects which filter block will be read from/written to arg1: dest(filter_block_map_t)”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_BYPASS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set filter bypass state. arg1: 0 - filter enabled, 1 - bypassed”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_COEFF</p></td>
+<td><p>WRITE</p></td>
+<td><p>NUM_FILTER_COEFFS</p></td>
+<td><p>“Set biquad coeffs for a selected filter using floating point. arg1..10: 5x2 float coeffs in forward order (a1,a2,b0,b1,b2) where a0 always is 1.0”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_FILTER_COEFF_RAW</p></td>
+<td><p>WRITE</p></td>
+<td><p>NUM_FILTER_COEFFS</p></td>
+<td><p>“Set raw biquad coeffs for a selected filters. arg1..10: 2 sets of coeffs in forward order (b0,b1,b2,-a1,-a2) signed Q28 format”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_INDEX</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get filter index. Selects which filter block will be read from/written to”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_BYPASS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get filter bypass state. 0 - filter enabled, 1 - bypassed”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_COEFF</p></td>
+<td><p>READ</p></td>
+<td><p>NUM_FILTER_COEFFS</p></td>
+<td><p>“Get biquad coeffs for a selected filter using floating point. arg1..10: 5x2 float coeffs in forward order (a1,a2,b0,b1,b2) where a0 always is 1.0”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_FILTER_COEFF_RAW</p></td>
+<td><p>READ</p></td>
+<td><p>NUM_FILTER_COEFFS</p></td>
+<td><p>“Get raw biquad coeffs for a selected filters. arg1..10: 2 sets of coeffs in forward order (b0,b1,b2,-a1,-a2) signed Q28 format”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_OUTPUT_SHIFT</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“For a selected output(output_io_map_t), set the no. of bits the output samples will be shifted by. Postive shift value indicates left shift, negative indicates right shift”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MAX_UBM_CYCLES</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get maximum no. of cycles taken by the user buffer management function”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>RESET_MAX_UBM_CYCLES</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“reset the max user buffer management cycles count”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_I2S_RATE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get I2S rate”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_I2S_RATE</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set I2S rate. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_I2S_START_STATUS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Start I2S. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_I2S_START_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get I2S start status”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_VENDOR_ID</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB Vendor ID”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_PRODUCT_ID</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB Product ID”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_BCD_DEVICE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB Device Release Number (bcdDevice)”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_VENDOR_STRING</p></td>
+<td><p>READ</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Get USB Vendor string”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_PRODUCT_STRING</p></td>
+<td><p>READ</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Get USB Product string”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_HID_MAP</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“Get HID map. Returns byte and bit in HID report for event type and index given by SET_HID_MAP_READ_HEADER.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HID_MAP_READ_HEADER</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“Get HID map read header. Returns event type, e.g., GPI or keyword, and index.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_HID_USAGE</p></td>
+<td><p>READ</p></td>
+<td><p>4</p></td>
+<td><p>“Get HID usage. Returns usage page number and short item bytes 0..2 for the HID report byte and bit set by SET_HID_USAGE_READ_HEADER.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HID_USAGE_READ_HEADER</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“Get HID usage read header. Returns the HID report byte and bit and the usage page given by SET_HID_USAGE_READ_HEADER.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SERIAL_NUMBER</p></td>
+<td><p>READ</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Read serial number from USB descriptor (normally initialised from flash).”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_HARDWARE_BUILD</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get the build number from the hardware build section of the flash data partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_VENDOR_ID</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set USB Vendor ID. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_PRODUCT_ID</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set USB Product ID. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_VENDOR_STRING</p></td>
+<td><p>WRITE</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Set USB Vendor string. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_PRODUCT_STRING</p></td>
+<td><p>WRITE</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Set USB Product string. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_BCD_DEVICE</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set USB Device Release Number (bcdDevice)”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_HID_MAP</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“Set HID map for event type and index from SET_HID_MAP_READ_HEADER. arg1: HID report byte. arg2: HID report bit. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_HID_MAP_READ_HEADER</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“Set HID map read header. arg1: type of event, e.g., GPI or keyword. arg2: index of event.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_HID_USAGE</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“Set HID usage for report byte and bit and with usage page from SET_HID_USAGE_READ_HEADER. arg1..3: short item bytes 0..2. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_HID_USAGE_READ_HEADER</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“Set HID usage read header. arg1: HID report byte. arg2: HID report bit. arg3: usage page number (see USB HID Usage Tables).”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_SERIAL_NUMBER</p></td>
+<td><p>WRITE</p></td>
+<td><p>USB_STR_MAX_BYTES</p></td>
+<td><p>“Program serial number to flash”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_USB_SERIAL_NUMBER</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Load serial number from flash and initialise USB device descriptor with it. Will not work after boot since descriptor is populated only once, with USB start.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_START_STATUS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Start USB. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_USB_START_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB start status”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_TO_DEVICE_RATE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB to device rate”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_DEVICE_TO_USB_RATE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get device to USB rate”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_USB_TO_DEVICE_BIT_RES</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get USB to device bit resolution”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_DEVICE_TO_USB_BIT_RES</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get device to USB bit resolution”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_TO_DEVICE_RATE</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set USB to device rate”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_DEVICE_TO_USB_RATE</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set device to USB rate”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_USB_TO_DEVICE_BIT_RES</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set USB to device bit resolution”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_DEVICE_TO_USB_BIT_RES</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set device to USB bit resolution”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MCLK_IN_TO_PDM_CLK_DIVIDER</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get XCore divider from input master clock to 6.144MHz DDR PDM microphone clock”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>GET_SYS_CLK_TO_MCLK_OUT_DIVIDER</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get XCore divider from system clock to output master clock”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_MCLK_IN_TO_PDM_CLK_DIVIDER</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set XCore divider from input master clock to 6.144MHz DDR PDM microphone clock (when master clock is slaved). Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_SYS_CLK_TO_MCLK_OUT_DIVIDER</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Set XCore divider from system clock to output master clock (where master clock output is used). Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_MIC_START_STATUS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“Get microphone client start status.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_MIC_START_STATUS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“Start microphone client (audio frontend).  This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>SET_MONITOR_STATE_USING_GPO_ENABLED</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“enable monitoring of state on GPO. This command is only run from the flash. Run only with -l option, generates a json item for the flash data-partition.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO</p></td>
+<td><p>SET_KWD_INTERRUPT_PIN</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set gpi pin index to receive kwd interrupt on”</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>GET_KWD_INTERRUPT_PIN</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get gpi pin index to receive kwd interrupt on”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_BYPASS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get bypass”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_X_ENERGY_DELTA_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get X energy delta”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_X_ENERGY_GAMMA_LOG2_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get X energy gamma log2”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_FORCED_MU_VALUE_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get forced mu value”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_ADAPTATION_CONFIG_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get adaptation config”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_MU_SCALAR_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get mu_scalar”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_MU_LIMITS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“AEC: get mu_high and mu_low”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_SIGMA_ALPHAS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“AEC: get sigma alphas”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_ERLE_CH0_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“AEC: get channel 0 ERLE”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_ERLE_CH1_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“AEC: get channel 1 ERLE”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_FRAME_ADVANCE_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get frame advance”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_Y_CHANNELS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get y channels”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_X_CHANNELS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get x channels”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_X_CHANNEL_PHASES_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>AEC_MAX_X_CHANNELS</p></td>
+<td><p>“AEC: get x channel phases”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_F_BIN_COUNT_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get f bin count”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>GET_FILTER_COEFFICIENTS_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>AEC_COEFFICIENT_CHUNK_SIZE/sizeof(uint32_t)</p></td>
+<td><p>“AEC: get filter coefficients”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>GET_COEFF_INDEX_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: get coefficient index”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_CH1_BEAMFORM_ENABLE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get if beamforming is enabled on channel1. default:enable”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_DELAY_ESTIMATOR_ENABLED</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: enable/disable delay estimation”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_DELAY_ESTIMATE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: get delay estimate”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_DELAY_DIRECTION</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: get configurable delay direction: 0: delay references, 1: delay mics”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MIC_SHIFT_SATURATE</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“CONTROL: get the shift value and saturation (1=enable) to be applied to the input mic samples”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_AEC_RESET_TIMEOUT</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: Get timeout between consecutive AEC resets, values are expressed in 15ms frames. If timeout is -1, the AEC reset is disabled”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ALT_ARCH_ENABLED</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: Get state of xvf3610 alternate architecture setting: 0: normal, 1: alt-arch”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_ENABLED</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get automatic delay estimator controller enabled: 0: off, 1: on”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ADEC_MODE</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get automatic delay estimator controller mode: 0: normal AEC mode, 1: delay estimation mode”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_TIME_SINCE_RESET</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get time in milliseconds since last automatic delay change by ADEC”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_AGM</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get AEC Goodness Metric estimate (0.0 - 1.0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ERLE_BAD_BITS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get ERLE bad threshold in bits (log2)”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ERLE_GOOD_BITS</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get ERLE good threshold in bits (log2)”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_PEAK_PHASE_ENERGY_TREND_GAIN</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get value which sets AGM sensitivity to peak phase energy slope”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_ERLE_BAD_GAIN</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: set how steeply AGM drops off when ERLE below threshold”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_FAR_THRESHOLD</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get far signal energy threshold above which we update AGM”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_AEC_PEAK_TO_AVERAGE_RATIO</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get AEC coefficients peak to average ratio”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_PHASE_POWERS</p></td>
+<td><p>READ</p></td>
+<td><p>ADEC_READ_PHASE_POWER_CHUNK_SIZE/sizeof(uint32_t)/2</p></td>
+<td><p>“stage A: get 5 phase powers (240 samples per phase) used in delay estimation from the index set.”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_PHASE_POWER_INDEX</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get GERLE gain (how strongly it responds either side of mid point)”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A min rx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A max rx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A min control time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A max control time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A min dsp time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A max dsp time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A min tx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A max tx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A min idle time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_A</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A max idle time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_ADEC_PEAK_TO_AVERAGE_GOOD_AEC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: get the peak to average ratio that is considered good when in normal AEC mode”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_ADEC_PEAK_TO_AVERAGE_GOOD_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: set the peak to average ratio that is considered good when in normal AEC mode”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B min rx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B max rx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B min control time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B max control time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B min dsp time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B max dsp time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B min tx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B max tx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B min idle time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_B</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage B max idle time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_RX_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C min rx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_RX_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C max rx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_CONTROL_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C min control time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_CONTROL_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C max control time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_DSP_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C min dsp time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_DSP_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C max dsp time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_TX_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C min tx time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_TX_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C max tx time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>GET_MIN_IDLE_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C min idle time per frame”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>GET_MAX_IDLE_TIME_STAGE_C</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“stage C max idle time per frame”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_GAIN_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get gain for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_GAIN_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get gain for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_MAX_GAIN_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get max gain for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get max gain for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_MIN_GAIN_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get min gain for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_MIN_GAIN_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get min gain for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_UPPER_THRESHOLD_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get upper threshold of desired level for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_UPPER_THRESHOLD_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get upper threshold of desired level for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LOWER_THRESHOLD_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get lower threshold of desired level for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LOWER_THRESHOLD_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get lower threshold of desired level for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC adaptation for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC adaptation for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_ON_VAD_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC adaptation using VAD data for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_ADAPT_ON_VAD_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC adaptation using VAD data for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_SOFT_CLIPPING_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC soft clipping for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_SOFT_CLIPPING_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get AGC soft clipping  for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_ENABLED_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get loss control enable for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_ENABLED_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get loss control enable for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_N_FRAMES_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>2</p></td>
+<td><p>“get number of near-end and far-end frames in loss control for channel 1”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_CORR_THRESHOLD_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get loss control correlation threshold for channel 0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_CORR_THRESHOLD_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get loss control correlation threshold for channel 1”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_DELTAS_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“get loss control delta coefficient for channel 0: far-end only, near-end only, both far-end and near-end”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_DELTAS_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“get loss control delta coefficient for channel 1: far-end only, near-end only, both far-end and near-end”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_GAMMAS_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“get loss control gamma coefficients for channel 0: background power, increment and decrement”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_GAMMAS_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>3</p></td>
+<td><p>“get loss control gamma coefficients for channel 1: background power, increment and decrement”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_LC_GAINS_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>4</p></td>
+<td><p>“get loss control gains for channel 0: max, double-talk, silence and min”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_LC_GAINS_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>4</p></td>
+<td><p>“get loss control gains for channel 1: max, double-talk, silence and min”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_INCREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get stepsize with which gain is incremented for AGC ch0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_INCREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get stepsize with which gain is incremented for AGC ch1”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>GET_DECREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get stepsize with which gain is decremented for AGC ch0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>GET_DECREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“get stepsize with which gain is decremented for AGC ch1”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_BYPASS_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get bypass state”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_X_ENERGY_DELTA_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get X energy delta”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_X_ENERGY_GAMMA_LOG2_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get X energy gamma log2”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_FORCED_MU_VALUE_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get forced mu value”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_ADAPTATION_CONFIG_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get adaptation config”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_SIGMA_ALPHA_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get adaptation config”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_PHASES_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get phases”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_PROC_FRAME_BINS_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get proc frame bins”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>GET_FILTER_COEFFICIENTS_IC</p></td>
+<td><p>READ</p></td>
+<td><p>IC_COEFFICIENT_CHUNK_SIZE/sizeof(uint32_t)</p></td>
+<td><p>“IC: get filter coefficients”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>GET_COEFFICIENT_INDEX_IC</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“IC: get coefficient index”</p></td>
+</tr>
+<tr class="row-even"><td><p>SUP</p></td>
+<td><p>GET_BYPASS_SUP</p></td>
+<td><p>READ</p></td>
+<td><p>1</p></td>
+<td><p>“SUP: get bypass”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_BYPASS_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set bypass”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_X_ENERGY_DELTA_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set X energy delta”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_X_ENERGY_GAMMA_LOG2_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set X energy gamma log2”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_FORCED_MU_VALUE_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set forced mu value”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_ADAPTATION_CONFIG_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set adaptation config”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_MU_SCALAR_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set mu_scalar”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>SET_MU_LIMITS_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“AEC: set mu_high and mu_low”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_SIGMA_ALPHAS_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“AEC: set sigma alphas”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEC</p></td>
+<td><p>RESET_FILTER_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: reset filter”</p></td>
+</tr>
+<tr class="row-even"><td><p>AEC</p></td>
+<td><p>SET_COEFF_INDEX_AEC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“AEC: set coefficient index”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_DELAY_DIRECTION</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set configurable delay direction: 0: delay references, 1: delay mics “</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_DELAY_SAMPLES</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“CONTROL: set configurable delay in samples”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_DELAY_ESTIMATOR_ENABLED</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set delay estimator enabled”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_MIC_SHIFT_SATURATE</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“CONTROL: set the shift value and saturation (1=enable) to be applied to the input mic samples”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ALT_ARCH_ENABLED</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: Set state of xvf3610 alternate architecture setting: 0: normal, 1: alt-arch”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_AEC_RESET_TIMEOUT</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“stage A: Set timeout between consecutive AEC resets, values are expressed in 15ms frames. If timeout is -1, the AEC reset is disabled”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ADEC_ENABLED</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set delay estimator controller enabled: 0: off, 1: on”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_MANUAL_ADEC_CYCLE_TRIGGER</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“trigger a delay estimate + delay configure cycle when 1 is written”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ERLE_BAD_BITS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set ERLE threshold at which AGM is decreased”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_ERLE_GOOD_BITS</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set ERLE threshold at which AGM is increased”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ERLE_BAD_GAIN</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set how strongly AGM is updated when ERLE below threshold”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_PEAK_PHASE_ENERGY_TREND_GAIN</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set how strongly AGM is updated by the peak phase slope”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>SET_ADEC_FAR_THRESHOLD</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set energy threshold of far signal above which AGM is updated”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>SET_PHASE_POWER_INDEX</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set index for reading phase powers”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_A</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“reset stage A frame time”</p></td>
+</tr>
+<tr class="row-even"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_B</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“reset stage B frame time”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AP</p></td>
+<td><p>RESET_TIME_STAGE_C</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“reset stage C frame time”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_GAIN_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set gain for channel 0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_GAIN_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set gain for channel 1”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set max gain for channel 0”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set gain for channel 1”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MAX_GAIN_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set max gain for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_MIN_GAIN_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set min gain for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_MIN_GAIN_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set min gain for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_UPPER_THRESHOLD_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set upper threshold of desired level for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_UPPER_THRESHOLD_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set upper threshold of desired level for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LOWER_THRESHOLD_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set lower threshold of desired level for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LOWER_THRESHOLD_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set lower threshold of desired level for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC adaptation for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC adaptation for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_ON_VAD_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC adaptation using VAD data for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_ADAPT_ON_VAD_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC adaptation using VAD data for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_SOFT_CLIPPING_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC soft clipping for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_SOFT_CLIPPING_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set AGC soft clipping for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_ENABLED_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“enable loss control for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_ENABLED_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“enable loss control for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_N_FRAMES_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“set number of frames in loss control for near-end and far-end activity on channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_N_FRAMES_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>2</p></td>
+<td><p>“set number of frames in loss control for near-end and far-end activity on channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_CORR_THRESHOLD_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set loss control correlation threshold for channel 0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_CORR_THRESHOLD_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set loss control correlation threshold for channel 1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_DELTAS_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“set loss control delta coefficients for channel 0: far-end only, near-end only, both far-end and near-end”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_DELTAS_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“set loss control delta coefficients for channel 1: far-end only, near-end only, both far-end and near-end”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_GAMMAS_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“set loss control gamma coefficients for channel 0: background power, increment and decrement”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_GAMMAS_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>3</p></td>
+<td><p>“set loss control gamma coefficients for channel 1: background power, increment and decrement”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_LC_GAINS_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>4</p></td>
+<td><p>“set loss control gains for channel 0: max, double-talk, silence and min”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_LC_GAINS_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>4</p></td>
+<td><p>“set loss control gains for channel 1: max, double-talk, silence and min”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_INCREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set stepsize with which gain is incremented for AGC ch0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_INCREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set stepsize with which gain is incremented for AGC ch1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>AGC</p></td>
+<td><p>SET_DECREMENT_GAIN_STEPSIZE_CH0_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set stepsize with which gain is decremented for AGC ch0”</p></td>
+</tr>
+<tr class="row-even"><td><p>AGC</p></td>
+<td><p>SET_DECREMENT_GAIN_STEPSIZE_CH1_AGC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set stepsize with which gain is decremented for AGC ch1”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_BYPASS_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set bypass”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_X_ENERGY_DELTA_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set X energy delta”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_X_ENERGY_GAMMA_LOG2_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set X energy gamma log2”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_FORCED_MU_VALUE_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set forced mu value”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_ADAPTATION_CONFIG_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set adaptation config”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>SET_SIGMA_ALPHA_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set adaptation config”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_COEFFICIENT_INDEX_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: set coefficient index”</p></td>
+</tr>
+<tr class="row-even"><td><p>IC</p></td>
+<td><p>RESET_FILTER_IC</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“IC: reset filter”</p></td>
+</tr>
+<tr class="row-odd"><td><p>IC</p></td>
+<td><p>SET_CH1_BEAMFORM_ENABLE</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“set if beamforming is enabled on channel1”</p></td>
+</tr>
+<tr class="row-even"><td><p>SUP</p></td>
+<td><p>SET_BYPASS_SUP</p></td>
+<td><p>WRITE</p></td>
+<td><p>1</p></td>
+<td><p>“SUP: set bypass”</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../other_resources/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Additional Information</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="Capturing_packed_samples.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Capturing packed samples for system integration</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2019-2021, XMOS Ltd
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="../../../_sources/doc/rst/reference/Command_table.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </main>
+</div>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/tabs.js"></script>
+    <script src="../../../_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></body>
+</html>

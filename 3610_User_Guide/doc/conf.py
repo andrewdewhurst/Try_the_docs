@@ -24,11 +24,26 @@ copyright = '2019-2021, XMOS Ltd'
 author = 'XMOS Ltd'
 
 # ----------------------------------------------
-project = 'XVF3610'
-release = '2.0.0'
+# get environment variables (set as part of make .ps1 (powershell script) file)
+# to set project name and version which show up below the XMOS logo
+env_doc_title = os.getenv("DOC_TITLE")
+env_doc_version = os.getenv("DOC_VERSION")
+
+if env_doc_title != None:
+    project = env_doc_title
+else:
+    project = 'Documentation'
+
+if env_doc_version != None:
+    release = "(V{})".format(env_doc_version)
+else:
+    release = ''
+
+html_title = "{} {}".format(project, release) #overrides the default format that adds the word "documentation" to the project and release
 
 
 
+# ----------------------------------------------
 StandaloneHTMLBuilder.supported_image_types = [
     "image/svg+xml",
     "image/gif",

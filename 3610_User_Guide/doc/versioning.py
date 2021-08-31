@@ -22,9 +22,13 @@ def build_template(versions=None, destFolder=None, outputFile=None):
     # -- Define the template ---------------------------------------------------------
     raw_template = """
     <select name="version" id="version-select" value="Latest" onchange="changeVersion(this.value)" >
-    <option selected disabled>Other versions</option>
+    <option selected disabled>Choose version</option>
     %for version in versions:
-    <option value="html/${version}/">${version}</option>
+        %if version == "latest":
+            <option value="html/${version}/">${version}</option>
+        %else:
+            <option value="html/${version}/">${version}</option>
+        %endif 
     %endfor
     </select>
 
@@ -70,9 +74,19 @@ def build_template(versions=None, destFolder=None, outputFile=None):
                 versions.append(f)
         versions.append("latest")
 
+
+    #uses an env variable for the latest verion
+    env_doc_version = os.getenv("DOC_VERSION")
+    if env_doc_version != None:
+        release = env_doc_version
+    else:
+        release = 'TBD'
+    print("The latest release will be: {}".format(release))
+
+
     #Use mako to process the template
     mytemplate = Template(raw_template)
-    filledTemplate = mytemplate.render(versions=(versions))
+    filledTemplate = mytemplate.render(versions=(versions), latest=release)
 
     #Create a file
     if outputFile == None:
